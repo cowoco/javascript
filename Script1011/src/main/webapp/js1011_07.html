@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>연산</title>
+		<!--<script src="js/script9.js">--> </script><!--삼항식-->
+		<style>
+			*{margin:0; padding: 0;}
+			table,th,td{border-collapse: collapse; border:2px solid darkgreen;}
+			table{width: 500px; height: 90px;
+			      border-top: 3px solid purple;
+			      margin: 20px auto;}
+			th{background: #efefef;}
+			th,td{text-align: center; font-size: 20px; height: 30px;}
+		</style>
+		<script>
+			var a = Number(prompt("1번째 숫자를 입력하세요"));
+			var b = Number(prompt("2번째 숫자를 입력하세요"));
+			var c = Number(prompt("3번째 숫자를 입력하세요"));
+
+	      /*var result = a>=b?a:b;
+		    var maxNum = result>=c ? result:c; */
+	    
+		    var maxNum = a>b?(a>=c?a:c):(b>c?b:c);
+		
+		</script>	
+	</head>
+	<body>
+		<table>
+			<colgroup>
+				<col style="width: 50%;">
+				<col style="width: 50%;">
+			</colgroup>
+			<tr>
+				<th>1번째 숫자</th>
+					<td>
+						<script> document.write(a);</script>
+					</td>
+			</tr>
+			<tr>
+				<th>2번째 숫자</th>
+				<td>
+					<script> document.write(b);</script>
+				</td>
+			</tr>
+			<tr>
+				<th>3번째 숫자</th>
+				<td>
+					<script> document.write(c);</script>
+				</td>
+			</tr>
+			<tr>
+				<th>큰수</th>
+				<td>
+					<script> document.write(maxNum);</script>
+				</td>
+	
+			</tr>
+		</table>
+	
+	</body>
+</html>
